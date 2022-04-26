@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ultra', serif;
+}
+
+body {
+    background-color: #404040;
+    background-image: url(./images/table.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-title{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff000;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    min-height: 300px;
+}
+
+.card-image {
+    margin: 0 0.5em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CSS */
+button {
+  background-color: #fff000;
+  border-radius: 12px;
+  font-family: 'Ultra', serif;
+  color: rgb(75, 74, 74);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 1em;
+  /* margin-left: 1em; */
+}
+
+button:not(:disabled):hover,
+button:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+button:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
