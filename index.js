@@ -1,6 +1,7 @@
 const newDeckBtn = document.getElementById('newdeck-btn');
 const drawBtn = document.getElementById('draw-btn');
-const cardContainer = document.getElementById('card-container')
+const firstCard = document.getElementById('first-card')
+const secondCard = document.getElementById('second-card')
 let deckId = "";
 
 function getCards(){
@@ -19,8 +20,11 @@ function drawCards(){
         // for (card in cards){
             
         // }
-        cardContainer.innerHTML = `
+        firstCard.innerHTML = `
         <img class='card-image' src='${data.cards[0].image}'>
+        
+        `
+        secondCard.innerHTML = `
         <img class='card-image' src='${data.cards[1].image}'>
         `
     })
