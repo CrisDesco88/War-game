@@ -12,6 +12,17 @@ body {
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+}
+
+h2 {
+    color:#fff;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.winner-title {
+    text-transform: uppercase;
 }
 
 .main-title{
@@ -48,11 +59,18 @@ body {
     max-height: 300px;
 }
 
-
+.score-display {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    background-color: chocolate;
+}
 
 .button-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -75,8 +93,8 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-right: 1em;
-  /* margin-left: 1em; */
+  margin-top: 1em;
+  
 }
 
 button:not(:disabled):hover,
